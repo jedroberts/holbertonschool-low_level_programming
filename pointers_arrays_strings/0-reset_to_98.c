@@ -9,13 +9,14 @@
 int main(void)
 {
 		int n;
+		int *p;
 
 		n = 402;
 		{
 			printf("n=%d\n", n);
 		}
-		int *p = &n;
 
+		p = &n;
 		*p = 98;
 		{
 			printf("n=%d\n", n);
